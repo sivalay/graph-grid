@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-col</title>
+    <link rel="stylesheet" href="graph-model-css.css">
+</head>
+<body>
+    <div class="main-wrap">
+        <h1>Grid-Column</h1>
+        <div class="input-wrap">
+            <div class="form-container">
+                <form action="" class="form form1">
+                    <div class="input-box">
+                        <label for="maxX">maxX : </label>
+                        <input type="number" name="maxX" class="input" id="max-x">
+                    </div>
+                    <div class="input-box">
+                        <label for="maxY">maxY : </label>
+                        <input type="number" name="maxY" class="input" id="max-y">
+                    </div>
+                </form>
+                <form action="" class="form form2 undisplay">
+                    <div class="input-box">
+                        <label for="xValue">xValue : </label>
+                        <input type="number" name="xValue" class="input" id="x-val">
+                    </div>
+                    <div class="input-box">
+                        <label for="yValue">yValue : </label>
+                        <input type="number" name="yValue" class="input" id="y-val">
+                    </div>
+                </form>
+            </div>
+            <div class="button-container">
+                <div>
+                    <button class="btn draw" id="draw">Draw</button>
+                    <button class="btn mark undisplay" id="mark">Mark</button>
+                    <button class="btn clear undisplay" id="clear">Clear</button>
+                </div>
+                <button class="btn reset undisplay" id="reset">Reset</button>
+            </div>
+        </div>
+        <div class="msg undisplay">Enter the correct value</div>
+        <div class="main-container">
+            <div class="graph-top grid-graph">
+                <div class="div-container grid-div">
+                    <!-- <ul class="box">
+                        <li class="box-col">Col1</li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="grid-col.js"></script>
+</body>
+</html>
