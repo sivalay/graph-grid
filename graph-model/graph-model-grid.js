@@ -57,19 +57,3 @@ times.forEach((time, timeid) => {
 })
 
 console.log(gridCont, 'gridCont')
-
-function msgPrint(msg){
-    let m = 0
-    if(msg == 'Stop'){
-        console.log(msg)
-        console.log('100cn')
-        m = 100
-    }
-
-    if (msg == 'Start'){
-        console.log(msg)
-        console.log('200cn')
-        m = 200
-    }
-    console.log(m)
-}
