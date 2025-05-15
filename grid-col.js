@@ -18,7 +18,7 @@ const msgCont = document.querySelector('.msg')
 // function to draw grid
 let xValue
 let yValue
-function toDraw(){
+function drawGrid(){
     xValue = maxX.value
     yValue = maxY.value
     for (let i=1; i<=yValue; i++){
@@ -38,7 +38,7 @@ function toDraw(){
 
 // function to mark grid
 let matchItem
-function toMark(){
+function markGridCells(){
     const x = xVal.value
     const y = yVal.value
     // console.log(x,y, 'x,y')
@@ -67,7 +67,7 @@ function toMark(){
 }
 
 drawBtn.addEventListener('click', () => {
-    toDraw()
+    drawGrid()
     markBtn.classList.remove('undisplay')
     clearBtn.classList.remove('undisplay')
     resetBtn.classList.remove('undisplay')
@@ -76,7 +76,7 @@ drawBtn.addEventListener('click', () => {
     form2.classList.remove('undisplay')
 })
 
-markBtn.addEventListener('click', toMark)
+markBtn.addEventListener('click', markGridCells)
 clearBtn.addEventListener('click', () => {
     xVal.value = ''
     yVal.value = ''
