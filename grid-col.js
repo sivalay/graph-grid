@@ -76,10 +76,14 @@ drawBtn.addEventListener('click', () => {
     form2.classList.remove('undisplay')
 })
 
-markBtn.addEventListener('click', markGridCells)
+markBtn.addEventListener('click', () => {
+    markBtn.disabled = true
+    markGridCells()
+})
 clearBtn.addEventListener('click', () => {
     xVal.value = ''
     yVal.value = ''
+    markBtn.disabled = 
     matchItem.classList.remove('red-back')
 })
 
