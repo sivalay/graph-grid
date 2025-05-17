@@ -100,6 +100,10 @@ h1{
     background-color: red;
 }
 
+.undisplay{
+    display: none;
+}
+
 /* ----------grid-col------------ */
 
 .input-wrap{

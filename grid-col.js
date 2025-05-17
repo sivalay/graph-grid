@@ -83,10 +83,12 @@ markBtn.addEventListener('click', () => {
 clearBtn.addEventListener('click', () => {
     xVal.value = ''
     yVal.value = ''
-    markBtn.disabled = 
+    markBtn.disabled = false
     matchItem.classList.remove('red-back')
 })
 
 resetBtn.addEventListener('click', () => {
     location.reload()
 })
+
+console.log(gridCont, 'gridCont')
