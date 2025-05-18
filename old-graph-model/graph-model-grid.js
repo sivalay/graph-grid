@@ -42,10 +42,10 @@ function drawBoxEl(gridEl){
 function drawTimeCont(){
     let timeContHtml = ''
     for (let i=0; i<=maxHour; i++){
-        // console.log('hi')
         timeContHtml += `<li class="time">Time${i}</li>`
     }
     timeCont.innerHTML = timeContHtml
+    console.log(timeCont.innerHTML)
 }
 
 // function to mark Graph
@@ -68,4 +68,4 @@ function markGraph(){
 
 
 
-// console.log(gridCont, 'gridCont')
+console.log(gridCont, 'gridCont')
