@@ -94,3 +94,4 @@ resetBtn.addEventListener('click', () => {
 })
 
 // console.log(gridCont, 'gridCont')
+
